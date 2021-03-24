@@ -3,10 +3,74 @@ h1, h2, h3, h4, h5, h6, ul {
     padding: 0;
 }
 
+body {
+    padding-top: 70px;
+    font-family: Formular, sans-serif;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
 .container {
     @include container();
     @include sm(max-width, rem(510));
     @include md(max-width, rem(690));
     @include lg(max-width, rem(930));
     @include xl(max-width, rem(1110));
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.icon-facebook {
+    height: 30px;
+    width: 13px;
+    background: url(../img/svg/f.svg) center/contain no-repeat;
+    display: block;
+}
+
+.icon-instagram {
+    height: 30px;
+    width: 23px;
+    background: url(../img/svg/insta.svg) center/contain no-repeat;
+    display: block;
+}
+
+.icon-18 {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    margin-right: 25px;
+    margin-left: 25px;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    border-radius: 40px;
+    background-color: #fd3;
+    font-weight: 900;
+}
+
+.icon-clam-go {
+    margin-right: 40px;
+    width: 58px;
+    height: 41px;
+    background: url(../img/clam-go.png) center/contain no-repeat;
+    display: block;
+}
+
+.button-buy {
+    background-color: #fd3;
+    border: 1px solid #fd3;
+    font-size: 1.125rem;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: #f1d02a;
+    }
 }
