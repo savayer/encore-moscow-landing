@@ -1,0 +1,68 @@
+.emoji {
+  width: 158px;
+  height: 160px;
+  background: url(../img/emoji.png) center/contain no-repeat;
+  display: block;
+  margin: 2rem auto;
+}
+
+.footer__social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  li {
+    padding: 0 10px;
+    margin-right: 20px;
+    position: relative;
+
+    &:last-child:after {
+      content: none;
+    }
+
+    &:after {
+      content: '+';
+      position: absolute;
+      right: -20px;
+      top: calc(50% - 22px);
+      font-size: 30px;
+    }
+
+    &:before {
+      content: '';
+      width: 0;
+      transition: .2s;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #FFE864;
+      top: calc(50% - 5px);
+      height: 10px;
+    }
+
+    &:hover:before {
+      width: 100%;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    transition: .3s;
+    position: relative;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.footer__line {
+  background-color: #ffb9be;
+  height: 82px;
+  width: 100%;
+  margin-top: 3.5rem;
+}

@@ -1,0 +1,62 @@
+.link {
+  display: block;
+  font-size: 30px;
+  transition: .3s;
+  text-decoration: underline;
+  line-height: 48px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--red-hover:hover {
+    color: #ffb9be;
+  }
+
+  &--green-hover:hover {
+    color: #4bbda2;
+  }
+}
+
+.slider-line {
+  background: #fff;
+  padding: 25px 0;
+  display: flex;
+  overflow: hidden;
+
+  &__first {
+    display: flex;
+    animation: animate 30s -30s linear infinite;
+  }
+
+  &__second {
+    display: flex;
+    animation: animate2 30s -15s linear infinite;
+  }
+
+  &__item {
+    width: 280px;
+    flex: 0 0 auto;
+    height: 14px;
+    margin: 0 20px;
+    background: url(../img/slider-line.jpg) center/contain no-repeat;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
