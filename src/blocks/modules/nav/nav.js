@@ -16,7 +16,10 @@ $('.nav__burger').click(function () {
     }
 })
 
-$('.nav__mobile_wrapper').click(function () {
+$('.nav__mobile_wrapper').click(function (e) {
+    if (e.target.nodeName !== 'A') {
+        return
+    }
     $(this).removeClass('active')
     $('.nav__burger').removeClass('active')
     if ($(this).hasClass('active')) {
