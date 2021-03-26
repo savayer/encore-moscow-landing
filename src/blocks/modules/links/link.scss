@@ -3,7 +3,9 @@
   font-size: 30px;
   transition: .3s;
   text-decoration: underline;
-  line-height: 48px;
+  line-height: 1.6;
+
+  @extend .text-resize;
 
   &:hover {
     text-decoration: none;

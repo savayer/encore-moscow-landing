@@ -10,9 +10,13 @@
   justify-content: center;
   z-index: 10;
 
+  @include xl(padding, 12px 10px);
+
   &__meta {
     display: flex;
     align-items: center;
+
+    @include lg(margin-left, auto)
   }
 }
 
@@ -22,6 +26,10 @@
 
   li {
     margin: 0 20px;
+
+    @include max(1100) {
+      margin: 0 12px;
+    }
   }
 }
 
@@ -32,8 +40,16 @@
   align-items: center;
   list-style: none;
 
+  @include xl(padding, 0);
+  @include lg(display, none);
+
   li {
     padding: 10px;
+
+    @include max(1100) {
+      padding: 10px 7px;
+    }
+
     &.active:before {
       content: '';
       transition: width 200ms ease-out;
@@ -68,6 +84,8 @@
   display: flex;
   margin: 0 10px;
   padding: 0 5px;
+
+  @include lg(display, none);
 }
 
 .b2b {
@@ -76,4 +94,8 @@
   font-size: 16px;
   font-weight: bold;
   margin: auto;
+
+  @include max(1100) {
+    font-size: 14px;
+  }
 }

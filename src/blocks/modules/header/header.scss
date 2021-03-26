@@ -2,13 +2,16 @@
   display: flex;
   padding: 20px;
   background: #00e988;
-  min-height: 600px;
+  min-height: 700px;
   text-align: center;
 
   &__content {
     margin: auto;
     font-size: 22px;
     font-weight: 500;
+
+    @include md(font-size, 20px);
+    @include sm(font-size, 18px);
 
     p {
       margin: 3rem 0;
@@ -23,10 +26,18 @@
   border: 6px solid #000;
   font-family: Jerseym54, sans-serif;
   font-size: 48px;
+
+  @include max(850) {
+    font-size: 40px;
+  }
+
+  @include sm(font-size, 36px);
+  @include xs(font-size, 32px);
 }
 
 .countdown {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 0;
   padding-left: 0;
   justify-content: center;

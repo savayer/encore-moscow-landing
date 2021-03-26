@@ -13,10 +13,19 @@
     margin-top: 30px;
     padding-right: 20px;
     padding-left: 20px;
+
+    @include lg(margin-top, 20px);
+    @include md(margin-top, 10px);
+    @include sm(margin-top, 5px);
   }
 
   img {
     max-height: 90px;
+
+    @include lg(max-height, 80px);
+    @include md(max-height, 70px);
+    @include sm(max-height, 60px);
+    @include xs(max-height, 50px);
   }
 }
 
@@ -27,6 +36,11 @@
   line-height: 2em;
   font-weight: 700;
   text-align: center;
+
+  @include lg(font-size, 80px);
+  @include md(font-size, 60px);
+  @include sm(font-size, 40px);
+
   &:after {
     content: '+';
   }

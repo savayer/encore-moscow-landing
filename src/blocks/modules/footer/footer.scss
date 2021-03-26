@@ -9,6 +9,7 @@
 .footer__social {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   li {
@@ -53,6 +54,8 @@
     font-weight: 400;
     transition: .3s;
     position: relative;
+
+    @extend .text-resize;
 
     &:hover {
       text-decoration: none;

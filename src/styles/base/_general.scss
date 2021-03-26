@@ -28,6 +28,19 @@ a {
     text-decoration: none;
 }
 
+.text-resize {
+    @include lg(font-size, 28px);
+    @include md(font-size, 26px);
+    @include sm(font-size, 24px);
+    @include xs(font-size, 22px);
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
 .icon-facebook {
     height: 30px;
     width: 13px;
@@ -54,6 +67,9 @@ a {
     border-radius: 40px;
     background-color: #fd3;
     font-weight: 900;
+
+    @include xl(margin, 0 15px);
+    @include lg(margin-left, 0);
 }
 
 .icon-clam-go {
@@ -74,6 +90,15 @@ a {
     cursor: pointer;
     margin-left: 20px;
     transition: .3s;
+
+    @include max(1100) {
+        font-size: 1rem;
+    }
+
+    @include xs(margin-left, 12px);
+    @include max(330) {
+        font-size: 15px;
+    }
 
     &:hover {
         background-color: #f1d02a;
@@ -118,6 +143,19 @@ a {
     margin: 3rem 0;
     display: inline-block;
     padding: 0 30px;
+
+    @include lg-block {
+        font-size: 30px;
+        margin: 2rem 0;
+    }
+
+    @include md-block {
+        font-size: 28px;
+        margin: 1rem 0;
+        padding: 0 15px;
+    }
+    @include sm(font-size, 26px);
+    @include xs(font-size, 24px);
 }
 
 .text-center {
@@ -129,6 +167,14 @@ a {
     font-size: 30px;
     line-height: 1.6;
     text-transform: uppercase;
+
+    @include xl(font-size, 28px);
+    @include lg(font-size, 26px);
+    @include md(font-size, 24px);
+    @include md(margin-bottom, 60px);
+    @include sm(margin-bottom, 40px);
+    @include sm(font-size, 22px);
+    @include xs(font-size, 20px);
 }
 
 .d-block {
