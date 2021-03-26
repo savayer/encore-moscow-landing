@@ -5,3 +5,7 @@ $(document).on('click', '.menu a[href^="#"]', function (e) {
         scrollTop: $($.attr(this, 'href')).offset().top - 80
     }, 500);
 });
+
+$('.nav__burger').click(function () {
+    $(this).toggleClass('active')
+})

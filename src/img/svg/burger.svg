@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>burger</title>
+    <desc>Created with Sketch.</desc>
+    <g id="burger" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#FFFFFF" x="13" y="18" width="30" height="2" rx="1"></rect>
+        <rect id="Rectangle" fill="#FFFFFF" x="13" y="27" width="30" height="2" rx="1"></rect>
+        <rect id="Rectangle" fill="#FFFFFF" x="13" y="36" width="30" height="2" rx="1"></rect>
+    </g>
+</svg>

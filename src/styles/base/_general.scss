@@ -70,6 +70,11 @@ a {
 
     @include xl(margin, 0 15px);
     @include lg(margin-left, 0);
+    @include xs-block {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
 }
 
 .icon-clam-go {
@@ -96,8 +101,16 @@ a {
     }
 
     @include xs(margin-left, 12px);
-    @include max(330) {
-        font-size: 15px;
+    @include xs-block {
+        margin-left: 12px;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    @include max(360) {
+        font-size: 12px;
+        padding: 10px 5px;
+        margin-left: 5px;
     }
 
     &:hover {
