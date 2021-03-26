@@ -9,21 +9,7 @@ $('.slider').slick({
     autoplay: true,
     infinite: true,
     centerMode: true,
-    centerPadding: '150px',
+    variableWidth: true,
     prevArrow: '<a href="#" class="arrow arrow--left"><span class="w-icon-slider-left"></span></a>',
-    nextArrow: '<a href="#" class="arrow arrow--right"><span class="w-icon-slider-right"></span></a>',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                centerPadding: '50px'
-            }
-        },
-        {
-            breakpoint: 500,
-            settings: {
-                centerPadding: '20px'
-            }
-        }
-    ]
+    nextArrow: '<a href="#" class="arrow arrow--right"><span class="w-icon-slider-right"></span></a>'
 })
