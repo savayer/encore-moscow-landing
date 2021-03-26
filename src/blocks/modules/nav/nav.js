@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 $(document).on('click', '.menu a[href^="#"]', function (e) {
     e.preventDefault();
 

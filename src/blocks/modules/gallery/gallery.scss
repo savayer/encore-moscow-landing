@@ -52,6 +52,7 @@
     text-decoration: none;
     padding: 2rem;
     text-align: center;
+    cursor: pointer;
 
     @include max(768) {
       height: 150px;
