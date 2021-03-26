@@ -8,11 +8,19 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 body {
-    padding-top: 70px;
+    padding-top: 74px;
     font-family: Formular, sans-serif;
     color: #000;
     font-size: 18px;
     line-height: 1.4;
+
+    @include max(1100) {
+        padding-top: 72px;
+    }
+    @include xs(padding-top, 62px);
+    @include max(360) {
+        padding-top: 59px;
+    }
 }
 
 .container {
