@@ -116,6 +116,8 @@ a {
     text-align: center;
     text-transform: uppercase;
     margin: 3rem 0;
+    display: inline-block;
+    padding: 0 30px;
 }
 
 .text-center {
@@ -131,4 +133,49 @@ a {
 
 .d-block {
     display: block;
+}
+
+.animate-line {
+    position: relative;
+
+    &--red {
+        &:before, &:after {
+            background: #ffb9be;
+        }
+    }
+
+    &--yellow {
+        &:before, &:after {
+            background: #ffdd33;
+        }
+    }
+
+    &--green {
+        &:before, &:after {
+            background: #aefbc5;
+        }
+    }
+
+    &.aos-animate:after, &.aos-animate:before {
+        width: 50%;
+    }
+
+    &:after, &:before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 5px);
+        height: 10px;
+        width: 0;
+        z-index: -1;
+        transition: .4s .1s;
+        display: inline-block;
+    }
+
+    &:after {
+        left: 50%;
+    }
+
+    &:before {
+        right: 50%;
+    }
 }
